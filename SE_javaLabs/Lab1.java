@@ -53,29 +53,24 @@ public class Lab1 {
         System.out.println("The algebraic roots of the equation are " + r1 + " and " + r2 + ".");
         
         
-        /*
-        int n, i, j;
+        //Pascals Triangle
+        int na, i, j;
         System.out.println("Enter a number of rows: ");
-        Scanner sc = new Scanner(System.in);
-        n = sc.nextInt();
-        for (i = 0; i < n; i++) {
-            for (j = 0; j < n - i; j++) {
-                System.out.print("  ");
-            }
-            for (j = 0; j <= i; j++) {
-                System.out.print(fact(i) / (fact(i - j) * fact(j)) + "   ");
-            }
-            System.out.print("\n");
-        }
+        na = sc.nextInt();
+              for (i = 0; i < na; i++) {
+                  for (j = 0; j < na - i; j++) {
+                      System.out.print("  ");
+                  }
+                  for (j = 0; j <= i; j++) {
+                      System.out.print(fact(i) / (fact(i - j) * fact(j)) + "   ");
+                  }
+                  System.out.print("\n");
+              }
+          }
+          static int fact(int na) {
+              if (na == 0) {
+                  return 1;
+              }
+              return na * fact(na - 1);
+          }
     }
-    private static int fact(int n) {
-        if (n == 0) {
-            return 1;
-        }
-        return n * fact(n - 1);
-    }
-    */
-        
-        
-    }
-}  
