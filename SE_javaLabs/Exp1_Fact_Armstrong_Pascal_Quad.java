@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Lab1 {
+public class Exp1_Fact_Armstrong_Pascal_Quad {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         
