@@ -11,6 +11,7 @@ JCheckBox cb1, cb2, cb3, cb4;
 JButton b;
 JTextArea area;
 
+@SuppressWarnings("unchecked")
 Studentform(){
 
 JFrame f = new JFrame("Student Form");
@@ -49,6 +50,7 @@ f.add(l3);
 JLabel l4 = new JLabel ("Age");
 l4.setBounds(20, 165, 80, 30);
 String age[] = {"18","19","20","21","22"};
+
 cb = new JComboBox(age);
 cb.setBounds(100,170,90, 20);
 f.add(l4);
