@@ -2,7 +2,7 @@ import java.awt.*;
 
 import java.awt.event.*;
 
-class Calculator implements ActionListener {
+class calcUsingAwt implements ActionListener {
 
 Frame f = new Frame("Calculator");
 Label l1 = new Label("First Number"); 
@@ -19,7 +19,7 @@ Button b3 = new Button("Mul");
 Button b4 = new Button("Div");
 Button b5 = new Button("Cancel");
 
-Calculator(){
+calcUsingAwt(){
 
 l1.setBounds(50, 100, 100, 20); 
 
@@ -102,6 +102,6 @@ if (e.getSource() == b4) { t3.setText(String.valueOf(n1 / n2)); }
 if (e.getSource() == b5) { System.exit(0);}
 }
 	public static void main(String[] args){ 
-		new Calculator ();
+		new calcUsingAwt();
 	}
 }

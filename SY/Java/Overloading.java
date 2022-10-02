@@ -1,25 +1,23 @@
 import java.util.*;
 
-public class Main {
+public class Overloading {
     public static void main(String[] args) {
         shape r1 = new shape();
-        System.out.print("Square Side : ");
+        r1.Rectangle();
+        r1.Triangle();
+        r1.Cube();
+        System.out.print("\nVariable Side of Cube : ");
         Scanner sc = new Scanner(System.in);
         double s = sc.nextInt();
-        System.out.println("");
-        r1.Rectangle();
-        r1.Square();
-        r1.Triangle();
         r1.Cube(s);
         r1.Sphere();
-        r1.Cylinder();
     }
 }
 
 class shape {
     double  l,b,h,r;
-    double vol,tsa;
-    double pi = Math.round((Math.PI*100)/100);
+    double vol,tsa, area;
+    double pi = 3.14;
     Scanner sc = new Scanner(System.in);
 
     shape(){
@@ -35,17 +33,18 @@ class shape {
     }
 
     void Rectangle(){
-        double Area = l*b;
-        System.out.println("Area of Rectangle = " + Area);
+        area = l*b;
+        System.out.println("Area of Rectangle = " + area);
     }
 
-    void Square(){
-        double Area = l*l;
-        System.out.println("Area of Square= " + Area);
-    }
     void Triangle(){
-        double Area = l*b*0.5;
-        System.out.println("Area of Triangle= " + Area);
+        area = l*b*0.5;
+        System.out.println("Area of Triangle= " + area);
+    }
+
+    void Cube(){
+        vol = l*l*l;
+        System.out.println("Volume of Cube = " + vol);
     }
 
     void Cube(double s){
@@ -61,12 +60,4 @@ class shape {
         tsa = 4*pi*r*r;
         System.out.println("Total Surface Area = " + tsa+ "\n");
     }
-
-    void Cylinder(){
-        vol = pi*r*r*h;
-        System.out.println("Volume of Cylinder = " + vol);
-        tsa = pi*r*r*2 + 2*pi*r*h;
-        System.out.println("Total Surface Area = " + tsa + "\n");
-    }
-
 }

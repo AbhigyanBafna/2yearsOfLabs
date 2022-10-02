@@ -117,7 +117,6 @@ area.setText("Name :"+ name + "\n" + "Mobile Number :" + mobile + "\n" + "Gender
 
 }
 
-
 	public static void main(String[] args){ 
 		new Studentform();
 	}
