@@ -1,126 +1,132 @@
 #include<stdio.h>
-#include<conio.h>
 #include<stdlib.h>
-struct ll_node {
+
+//Self Referencing Structure
+struct node{
     int data;
-    struct ll_node*next;
-};
-struct ll_node *list;
-struct ll_node*insert(struct ll_node *list)
-{
-
-    int value;
-
-    struct ll_node *help_ptr = list;
-    struct ll_node pnew = (struct ll_node) malloc(sizeof(struct ll_node));
-
-   if(pnew!=NULL)
-   {
-
-      printf("Enter number to insert: ");
-        scanf("%d",&value);
-
-        pnew->data = value;
-        pnew->next = NULL;
-
-        if(list==NULL || list -> data > value)
-        {
-            pnew->next = list;
-            list = pnew;
-            return list;
-
-        }
-        while(help_ptr->next!=NULL && help_ptr -> next -> data < value )
-        {
-
-                help_ptr =help_ptr->next;
-        }
-        pnew->next=help_ptr->next;
-        help_ptr->next=pnew;
-
-        return list;
-    }
-
-    return list;
-
-    }
-struct ll_node * display()
-{
-    struct ll_node * help_ptr = list;
-    if(list == NULL)
-    {
-        printf("Empty");
-    }
-    else
-    {
-        while(help_ptr !=NULL)
-    {
-        printf("\t %d", help_ptr-> data);
-        help_ptr = help_ptr -> next;
-    }
-    }
-
+    struct node *next; //Pointer to store address of next node
 };
 
-struct ll_node *delete1(struct ll_node * list)
-{
-    int target;
+struct node *head;
 
-    struct ll_node *help_ptr;
-    struct ll_node *node2delete;
-    help_ptr = list;
+void display(struct node *ptr){
+    int i = 1;
+    while(ptr !=NULL){
+        printf("Element %d = %d\n",i++, ptr->data);
+        ptr = ptr->next;
+    }
+}
 
-    printf("Enter number to delete: ");
+int val(){
+    int data;
+    printf("\nEnter value to insert : ");
+    scanf("%d",&data);
+    return data;
+}
+
+struct node* insertF(struct node *head){
+    int data;
+    data = val(); //New Head Value
+    struct node *ptr = (struct node *) malloc(sizeof(struct node)); //New Head
+    
+    ptr->next = head; //New Head Pointing to Old Head
+    ptr->data = data;
+    return ptr;
+}
+
+struct node* insertB(struct node *head){
+    int data;
+    data = val(); //New Head Value
+
+    struct node *ptr = (struct node *)malloc(sizeof(struct node)); //New Node
+    ptr->data = data;
+
+    struct node *hp = head; //Helper pointer for traversal
+    while(hp->next!=NULL){
+        hp = hp->next; //Traversal to last node
+    }
+
+    hp->next = ptr; //Linking new node after last node
+    ptr->next = NULL;
+    return head;
+}
+
+/*
+struct node* insertAfterVal(struct node *head){
+    int target; //Value After which insertion is to be done.
+    printf("Enter the number after which you would like to insert : ");
     scanf("%d",&target);
+    
+    struct node *ptr = (struct node *)malloc(sizeof(struct node)); //New Node
+    int data;
+    data = val(); //New Head Value
+    ptr->data = data;
 
-    if (help_ptr!= NULL)
-    {
-        if(help_ptr->data == target)
-        {
-            list = help_ptr->next;
-            free(help_ptr);
-            return list;
+    struct node *hp;
+    struct node *oldNode;
+    hp = head;
+
+    if (hp!= NULL){
+
+        if(hp->data == target){
+            head->next = ptr; //Inserting New Node after Head
+            ptr->next = hp->next; //Linking New Node ka next to Head ka old next
+            return head;
         }
-    while (help_ptr->next!=NULL)
-    {
-        if (help_ptr->next->data == target)
-        {
-            node2delete = help_ptr->next;
-            help_ptr->next = help_ptr->next->next;
-            free(node2delete);
-            return list;
+
+        while (hp->next!=NULL){
+    
+            if (hp->next->data == target){
+                oldNode = hp->next;
+                oldNode->next = ptr;
+                ptr->next = hp->next->next;
+                return head;
+            }
+            hp = hp->next;
         }
-        help_ptr = help_ptr->next;
     }
-    }
-    return list;
-};
+    return head;
+}
+*/
 
-int main()
-{
+void del(struct node *head){
+    int val;
+    printf("\nEnter the value you want to delete : ");
+    scanf("%d",&val);
+    struct node *p = head;
+    struct node *q = head->next;
 
-    int ch;
-    list=NULL;
-    do{
-    printf("\n1.INSERT\n2.DELETE\n3.DISPLAY\n4.EXIT\n");
-    printf("Enter your choice:");
-    scanf("%d",&ch);
-    switch(ch)
-    {
-    case 1:
-        list=insert(list);
-        break;
-    case 2:
-        //printf("delete");
-    list=delete1(list);
-    break;
-   case 3:
-       display( );
-    break;
-    case 4:
-    exit(0);
+    while(q->data!=val && q->next!=NULL){
+        p=p->next;
+        q=q->next;
     }
-    } while(ch!= 4);
+
+    p->next=q->next;
+    free(q);
+}
+
+int main(){
+    
+    struct node *first;
+    struct node *second;
+    head = (struct node *)malloc(sizeof(struct node));
+    first = (struct node *)malloc(sizeof(struct node));
+    second = (struct node *)malloc(sizeof(struct node));
+
+    head ->data = 7;
+    head ->next = first;
+
+    first ->data = 10;
+    first ->next = second;
+
+    second ->data = 131;
+    second ->next = NULL;
+
+    display(head);
+    head = insertAfterVal(head);
+    display(head);
+    head = insertAfterVal(head);
+    display(head);
 
     return 0;
 }
