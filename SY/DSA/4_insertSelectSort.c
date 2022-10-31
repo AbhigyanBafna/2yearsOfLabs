@@ -9,16 +9,16 @@ void printArray(int arr[], int n){
     printf("\n");
 }
 
-void insertionSort(int arr[], int n){
+void insertionSort(int arr[], int n){ //
     int i, key, j;
-    for (i = 1; i < n; i++) {
-        key = arr[i];
+    for (i = 1; i < n; i++) { 
+        key = arr[i]; //2nd Element
         j = i - 1;
 
         printArray(arr,n);
 
-        while (j >= 0 && arr[j] > key){
-            arr[j + 1] = arr[j];
+        while (j >= 0 && arr[j] > key){ //arr[j] = 1st Element
+            arr[j + 1] = arr[j]; //Swapping elements for Asc. Order
             j--;
         }
         arr[j + 1] = key;
@@ -37,11 +37,11 @@ void selectionSort(int arr[], int n) {
 
     printArray(arr,n);
 
-    int min = step;
+    int min = step; //Selected Element
 
-        for (int i = step + 1; i < n; i++) {
+        for (int i = step + 1; i < n; i++) { //Comparing element with all other elements.
           if (arr[i] < arr[min])
-            min = i;
+            min = i; // i is smaller hence swapped towards left.
         }
 
         swap(&arr[min], &arr[step]);
