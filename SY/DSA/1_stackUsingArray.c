@@ -1,35 +1,37 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define Size 5
+#define Size 5 //Size of Stack
 
 void push();
 void pop();
 void display();
 
-struct stack{
+struct stack{ //Struct is sUpErIOr
     int top;
     int item[Size];
 }s1;
 
 int main()
 {
-    s1.top = -1;
+    s1.top = -1; //Initializing ... 
     int choice;
+    printf("Stack Menu\n 1. Push\n 2. Pop\n 3. Display\n 4. Exit\n");
     do{
-    printf("Please select an Option from Below\n");
-    printf(" 1. Push\n 2. Pop\n 3. Display\n 4. Exit\n");
+    printf("Enter Operation Num: ");
     scanf("%d",&choice);
         switch(choice){
             case 1 : push();
+            printf("\n"); //Optional Spacing
             break;
             case 2 : pop();
+            printf("\n");
             break;
             case 3 : display();
+            printf("\n");
             break;
             case 4 : printf("Goodbye");
             exit(0);
-            default :
-            printf("Please enter a valid option (Integer)\n \n");
+            default : printf("Bad input.\n");
         }
     }while(choice != 4);
     return 0;
@@ -71,3 +73,18 @@ void display(){
     }
 }
 
+/*
+
+Stack is a linear DS following LIFO. 
+Data in the middle or bottom cannot be modified 
+all operations are performed at top.
+Using array/struct makes the stack static.
+To make it dynamic we can use LL.
+
+Time Complexites :
+
+push() : O(1)
+pop() : O(1)
+display() : O(n)
+
+*/

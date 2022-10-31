@@ -90,40 +90,17 @@ void main(){
     }
 }
 
-struct node *hpptr; 
-    struct node *temp; //The Target Node.
+/*
 
-    if(head==NULL){
-      printf("List is empty \n");  
-      return;
-    }
+Stack is a linear DS following FIFO. 
+They are like real world Queue's.
+Using array/struct makes the queue static.
+To make it dynamic we can use LL.
 
-    if(head->data==x){ //If Value to delete is head...
-        temp=head; 
-        head=head->next; //Assigning new head.
-        head->prev=NULL;
-        free(temp); //Deleting head.
-        return;
-    }
+Time Complexites :
 
-    hpptr=head; 
+enqueue() : O(1)
+dequeue() : O(1)
+display() : O(n)
 
-    while(hpptr->next!=NULL && hpptr->next->data!=x){
-    hpptr=hpptr->next; //Traversing until Target found.
-    }
-
-    if(hpptr->next==NULL){
-        printf("\nElement not found"); //End of LL Reached
-        return;
-    }
-    
-    temp=hpptr->next; //Target Acquired.
-    
-    hpptr->next=temp->next; //Giving location of Targets Next node to Targets previous Node. (Ensuring no strings attached)
-
-    if(temp->next!=NULL){ 
-    temp->next->prev=hpptr; //Giving location of Targets previous node to Targets Next node.
-    }
-
-    free(temp); //Target goes BOOM.
-    return;
+*/
