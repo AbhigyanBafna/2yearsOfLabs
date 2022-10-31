@@ -1,0 +1,103 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby, 
+C#, OCaml, VB, Perl, Swift, Prolog, Javascript, Pascal, HTML, CSS, JS
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <stdio.h>
+#include <stdlib.h>
+
+struct node 
+{
+    int data;
+    struct node *next;
+};
+
+struct node *front;
+struct node *rear;
+
+void enqueue(int value)
+{
+    printf("Enter value of element to be pushed: ");
+    scanf("%d",&value);
+    struct node *pnew;
+    pnew = (struct node*)malloc(sizeof(struct node));
+    pnew->data = value;
+    if (front == NULL)
+    {
+        front = pnew;
+        rear = pnew;
+        front->next = NULL;
+        rear->next = NULL;
+    }
+    else
+    {
+        rear->next = pnew;
+        rear = pnew;
+        rear->next = NULL;
+    }
+}
+
+void dequeue()
+{
+    struct node *ptr;
+    if (front == NULL)
+    {
+        printf("Queue is Empty\n");
+    }
+    else
+    {
+        ptr = front;
+        front = front->next;
+        printf("Element dequeued: %d",ptr->data);
+        free(ptr);
+    }
+}
+
+void display()
+{
+    struct node *ptr;
+    ptr = front;
+    if (front == NULL)
+    {
+        printf("Queue is Empty\n");
+    }
+    else
+    {
+        while (ptr != NULL)
+        {
+            printf("%d ",ptr->data);
+            ptr = ptr->next;
+        }
+        printf("\n");
+    }
+}
+
+int main()
+{
+    int opt,value;
+    do
+    {   
+        printf("\n1)Enqueue \n2)Dequeue \n3)Display \n4)Exit \n");
+        printf("Enter yor choice:");
+        scanf("%d",&opt);
+        switch(opt)
+        {
+            case 1:
+                enqueue(value);
+                break;
+            case 2:
+                dequeue();
+                break;
+            case 3:
+                display();
+                break;
+            case 4:
+                exit(0);
+        }
+    }
+    while(opt!=4);
+    return 0;
+}
