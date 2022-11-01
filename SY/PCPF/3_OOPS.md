@@ -21,8 +21,9 @@ So the same person exhibits different behavior in different situations. This is 
 <br>
 1. <b>Compile-time (Overloading)</b> - When multiple objects are overloaded they can then behave differently for different inputs
 hence polymorphism is achieved.
-2. <b>Runtime Polymorphism</b> (Ovveriding) - When virtual functions are used they override the function in derived class and hence achieve polymorphism.
+2. <b>Runtime Polymorphism (Overriding)</b> - When virtual functions are used they override the function in derived class and hence achieve polymorphism.
 <br>
 
 ![1](https://user-images.githubusercontent.com/101444239/199319138-a2ab10df-a573-4cb4-b0ab-608280cba469.png)
 
+PS - Code of Overriding in [2_initFinalBinding.cpp]()
