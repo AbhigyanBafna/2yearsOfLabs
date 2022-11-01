@@ -26,4 +26,4 @@ hence polymorphism is achieved.
 
 ![1](https://user-images.githubusercontent.com/101444239/199319138-a2ab10df-a573-4cb4-b0ab-608280cba469.png)
 
-PS - Code of Overriding in [2_initFinalBinding.cpp]()
+PS - Code of Overriding in [2_initFinalBinding.cpp](https://github.com/AbhigyanBafna/collegeLabs/blob/main/SY/PCPF/2_initFinalBinding.cpp) as DYNAMIC BINDING
