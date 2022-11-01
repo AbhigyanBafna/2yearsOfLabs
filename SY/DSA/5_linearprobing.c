@@ -20,7 +20,6 @@ int TABLE_SIZE = tsize;
         h[index]=key;
          break;
      }
-
     }
 
     if(i == TABLE_SIZE)
@@ -66,7 +65,7 @@ void display(int tsize)
 int main()
 {
     int tsize;
-    printf("Enter size of array: ")
+    printf("Enter size of array: ");
     scanf("%d",&tsize);
     int opt,i;
     for( i =0;i<tsize;i++)
