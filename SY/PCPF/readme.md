@@ -1,7 +1,8 @@
 # List of Experiments
+
 1. Scope Naming and Parameter Passing
-2. Object Orientation : (Inheritance and Binding)
-3. Polymorphism
+2. Initialization, Finalization and Binding
+3. Object Orientation : Inheritance and Polymorphism
 4. Exception Handling
 5. Validations by JS
 6. Arithmetic Functions using Prolog
