@@ -1,11 +1,11 @@
 # List of Experiments
 
 1. Scope Naming and Parameter Passing
-* [Code]()
-* [Theory]()
+* [Code](https://github.com/AbhigyanBafna/collegeLabs/blob/main/SY/PCPF/1_Basics/1_callByRefVal.c)
+* [Theory](https://github.com/AbhigyanBafna/collegeLabs/blob/main/SY/PCPF/1_Basics/Basics.md)
 2. Initialization, Finalization and Binding
-* [Code]()
-* [Theory]()
+* [Code](https://github.com/AbhigyanBafna/collegeLabs/blob/main/SY/PCPF/1_Basics/2_initFinalBinding.cpp)
+* [Theory](https://github.com/AbhigyanBafna/collegeLabs/blob/main/SY/PCPF/1_Basics/Basics.md)
 3. Object Orientation : Inheritance and Polymorphism
 * [Code]()
 * [Theory]()
