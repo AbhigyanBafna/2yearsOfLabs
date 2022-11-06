@@ -2,62 +2,52 @@ import java.util.*;
 
 public class Overloading {
     public static void main(String[] args) {
-        shape r1 = new shape();
-        r1.Rectangle();
-        r1.Triangle();
+        shape r1 = new shape(); 
+        shape r2 = new shape(10); //Constructor Overloaded
+
         r1.Cube();
-        System.out.print("\nVariable Side of Cube : ");
+        System.out.print("\nVariable Side Length : ");
         Scanner sc = new Scanner(System.in);
         double s = sc.nextInt();
-        r1.Cube(s);
-        r1.Sphere();
+        r1.Cube(s); //Cube Method Overloaded
+
+        r2.Sphere();
+        double tsa = r2.Sphere(10); //Sphere Method Overloaded
+        System.out.println("Total Surface Area = " + tsa+ "\n");
     }
 }
 
 class shape {
-    double  l,b,h,r;
-    double vol,tsa, area;
-    double pi = 3.14;
+    double  l,r, vol,tsa;
     Scanner sc = new Scanner(System.in);
 
-    shape(){
+    shape(){ //Default constructor
         System.out.println("Please Enter the following : ");
-        System.out.print("Length : ");
+        System.out.print("Side Length : ");
         l = sc.nextInt();
-        System.out.print("Breath : ");
-        b = sc.nextInt();
-        System.out.print("Height : ");
-        h = sc.nextInt();
-        System.out.print("Radius : ");
-        r = sc.nextInt();
     }
 
-    void Rectangle(){
-        area = l*b;
-        System.out.println("Area of Rectangle = " + area);
+    shape(int rad){ //Parameterized Constructor
+        r = rad;
     }
 
-    void Triangle(){
-        area = l*b*0.5;
-        System.out.println("Area of Triangle= " + area);
-    }
-
-    void Cube(){
+    void Cube(){ //Method without Parameters
         vol = l*l*l;
         System.out.println("Volume of Cube = " + vol);
     }
 
-    void Cube(double s){
+    void Cube(double s){ //Method with Parameters
         vol = s*s*s;
-        System.out.println("Volume of Cube = " + vol );
-        tsa = 6*s*s;
-        System.out.println("Total Surface Area = " + tsa + "\n");
+        System.out.println("Volume of Cube = " + vol +  "\n" );
     }
 
     void Sphere(){
-        vol = 4/3*pi*r*r*r;
+        vol = (4/3)* 3.14 *r*r*r;
         System.out.println("Volume of Sphere = " + vol);
-        tsa = 4*pi*r*r;
-        System.out.println("Total Surface Area = " + tsa+ "\n");
+    }
+
+    double Sphere(int r){
+        tsa = 4* 3.14 *r*r;
+        return tsa;
     }
 }
