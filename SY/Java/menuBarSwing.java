@@ -1,8 +1,9 @@
 
 import javax.swing.*;
+import java.awt.event.*;
 import java.awt.*;
 
-public class MenuBarSwings extends JFrame implements ActionListener{
+public class menuBarSwing extends JFrame implements ActionListener{
 	
 	JFrame f;
 	JMenuBar mb;
@@ -10,7 +11,7 @@ public class MenuBarSwings extends JFrame implements ActionListener{
 	JMenuItem cut,copy,paste, selectAll, open, save, newF, close,feedback,exit;
 	JTextArea ta;
 	
-	MenuBarSwings(){
+	menuBarSwing(){
 	super("NodePad Using GUI");
 	f = new JFrame();
 	mb = new JMenuBar();
@@ -80,6 +81,6 @@ public class MenuBarSwings extends JFrame implements ActionListener{
 
 
 	public static void main(String args[]){
-	new MenuBarSwings();
+	new menuBarSwing();
 }
 }

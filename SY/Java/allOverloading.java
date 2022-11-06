@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Overloading {
+public class allOverloading {
     public static void main(String[] args) {
         shape r1 = new shape(); 
         shape r2 = new shape(10); //Constructor Overloaded
