@@ -1,9 +1,9 @@
 # Java
 
-1. [Basics of Java](https://github.com/AbhigyanBafna/collegeLabs/blob/main/SY/Java/basicsOfJava.java)
+1. [Factorial Fibonacci and Quadratic](https://github.com/AbhigyanBafna/collegeLabs/blob/main/SY/Java/basicsOfJava.java)
 2. [Arrays](https://github.com/AbhigyanBafna/collegeLabs/blob/main/SY/Java/arrays.java)
-3. [Vectors](https://github.com/AbhigyanBafna/collegeLabs/blob/main/SY/Java/vectors.java)
-4. [Strings](https://github.com/AbhigyanBafna/collegeLabs/blob/main/SY/Java/strings.java)
+3. [Pascals and Armstrong](https://github.com/AbhigyanBafna/collegeLabs/blob/main/SY/Java/vectors.java)
+4. [Vectors and Strings](https://github.com/AbhigyanBafna/collegeLabs/blob/main/SY/Java/strings.java)
 5. [Overloading](https://github.com/AbhigyanBafna/collegeLabs/blob/main/SY/Java/allOverloading.java)
 6. [Inheritance]()
 7. [Interfaces]()
