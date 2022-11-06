@@ -6,7 +6,7 @@
 4. [Vectors and Strings](https://github.com/AbhigyanBafna/collegeLabs/blob/main/SY/Java/vectorStrings.java)
 5. [Overloading](https://github.com/AbhigyanBafna/collegeLabs/blob/main/SY/Java/allOverloading.java)
 6. [Inheritance](https://github.com/AbhigyanBafna/collegeLabs/blob/main/SY/Java/inheritance.java)
-7. [Interfaces and Abstract Classes](https://github.com/AbhigyanBafna/collegeLabs/blob/main/SY/Java/interAbstract.java) (Made it a little more fun :)
+7. [Interfaces and Abstract Classes](https://github.com/AbhigyanBafna/collegeLabs/blob/main/SY/Java/interAbstract.java)
 8. [Packages](https://github.com/AbhigyanBafna/collegeLabs/blob/main/SY/Java/packagesEx.java)
 9. [Exception Handling](https://github.com/AbhigyanBafna/collegeLabs/blob/main/SY/Java/exceptionHandling.java)
 10. [Multithreading](https://github.com/AbhigyanBafna/collegeLabs/blob/main/SY/Java/multiThreading.java)
