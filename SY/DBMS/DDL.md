@@ -15,12 +15,12 @@ ALTER table student ADD PRIMARY KEY(Roll_No);
 
 ALTER table student add Commitee varchar(30);
 
-ALTER table student drop column year;
+ALTER table student DROP column year;
 
 ALTER table student modify column name varchar(35) NOT NULL;
 
 ALTER table student modify CGPA int NOT NULL;
 
-ALTER table student rename dazeb;
-ALTER table dazeb rename student;
+ALTER table student RENAME dazeb;
+ALTER table dazeb RENAME student;
 ```
