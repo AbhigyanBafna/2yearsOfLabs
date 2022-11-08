@@ -12,7 +12,7 @@
 
 <br>
 
-## [Data Definition Language(DDL)](https://github.com/AbhigyanBafna/collegeLabs/blob/main/SY/DBMS/DDL.md)
+## Data Definition Language(DDL)
 
 * DDL commands are used to perform various operations on the structure/schema of the Database.
   *  <b>CREATE</b> is used for creation of a table.
