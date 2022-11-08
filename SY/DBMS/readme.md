@@ -1,6 +1,6 @@
-# Structured Query Language
+# Structured Query Language(SQL)
 
-| [DDL](https://github.com/AbhigyanBafna/collegeLabs/blob/main/SY/DBMS/DDL.md)         | DML         | DCL         | TCL         | Constraints |
+| DDL         | DML         | DCL         | TCL         | Constraints |
 | ----------- | ----------- | ----------- | ----------- | ----------- |
 | Create      | Select      | Grant       |Commit       | Primary Key |
 | Alter       | Insert      | Revoke      |Rollback     | Foreign Key |
@@ -19,7 +19,9 @@
   *  <b>ALTER</b> is used to modify/drop/add existing columns and constraints in a table. It can also be used for renaming them.
   *  <b>DROP</b> deletes the whole table with its contents entirely. Cannot ROLLBACK.
   *  <b>TRUNCATE</b> Keeps the column headings and deletes all the data(tuples) in the table. Cannot ROLLBACK.
-  *  <b>RENAME</b>
+  *  <b>RENAME</b> used to Rename columns or even the whole table. 
+<br><br>
+<b>Link to Code : </b>[DDL](https://github.com/AbhigyanBafna/collegeLabs/blob/main/SY/DBMS/DDL.md)    
 
 
 ## Data Manipulation Language(DML)
