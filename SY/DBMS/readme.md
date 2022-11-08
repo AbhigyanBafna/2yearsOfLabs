@@ -1,6 +1,6 @@
 # Structured Query Language
 
-| DDL         | DML         | DCL         | TCL         | Constraints |
+| [DDL](https://github.com/AbhigyanBafna/collegeLabs/blob/main/SY/DBMS/DDL.md)         | DML         | DCL         | TCL         | Constraints |
 | ----------- | ----------- | ----------- | ----------- | ----------- |
 | Create      | Select      | Grant       |Commit       | Primary Key |
 | Alter       | Insert      | Revoke      |Rollback     | Foreign Key |
