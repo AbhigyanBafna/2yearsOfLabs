@@ -3,7 +3,7 @@
 | DDL         | DML         | DCL         | TCL         | Constraints |
 | ----------- | ----------- | ----------- | ----------- | ----------- |
 | Create      | Select      | Grant       |Commit       | Primary Key |
-| After       | Insert      | Revoke      |Rollback     | Foreign Key |
+| Alter       | Insert      | Revoke      |Rollback     | Foreign Key |
 | Drop        | Update      |             |Savepoint    | Check       |
 | Truncate    | Delete      |             |             | Unique      |
 | Rename      |             |             |             | Default     |
