@@ -85,7 +85,7 @@ count_to_10(X) :-                 /* The Loop */
 ```
 
 <b> Queries Syntax </b>
-```
+```prolog
 change_directory('/Users/abhi/Desktop/Prolog_Practice').
 
 [knowledgeBase]. /* Loads the knowledge base in your current directory */
