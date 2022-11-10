@@ -63,7 +63,7 @@ SELECT s.product_no, p.description, SUM(qty_ordered) FROM sales_order_details AS
 SELECT Product_no, Description FROM Product_master WHERE Product_no NOT IN (SELECT Product_no FROM sales_order_details);
 
 --Find customers name, city and pincode for client who placced order no '019001'.
- SELECT Name, Address1, Address2, City, Pincode FROM Client_master WHERE Client_no IN (SELECT client_no FROM sales_order WHERE s_order_no = 'O19001');
+SELECT Name, Address1, Address2, City, Pincode FROM Client_master WHERE Client_no IN (SELECT client_no FROM sales_order WHERE s_order_no = 'O19001');
 
 ```
 
