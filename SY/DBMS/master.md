@@ -65,6 +65,118 @@ SELECT Product_no, Description FROM Product_master WHERE Product_no NOT IN (SELE
 --Find customers name, city and pincode for client who placced order no '019001'.
 SELECT Name, Address1, Address2, City, Pincode FROM Client_master WHERE Client_no IN (SELECT client_no FROM sales_order WHERE s_order_no = 'O19001');
 
+
+
+--VIEWS, TRIGGERS AND CURSORS
+
+--VIEWS
+CREATE VIEW V1 AS SELECT client_no, name,city FROM client_master;
+SELECT * FROM V1
+
+--TRIGGERS
+CREATE TABLE Student (roll_no int(2), name varchar(20), CGPA int(4), Commitee varchar(15));
+
+delimiter $$
+CREATE TRIGGER tg1
+BEFORE INSERT ON student
+FOR EACH ROW
+BEGIN
+SET NEW.name = upper(new.name);
+SET NEW.Commitee = upper(new.commitee);
+END;
+$$
+delimiter ;
+
+INSERT INTO Student VALUES (1, 'aBHI', 9.87, 'iETE');
+SELECT * FROM Student;
+
+-- CURSORS
+-- 1)
+Delimiter $$
+CREATE PROCEDURE CPr()
+BEGIN
+DECLARE done INT(10) DEFAULT 0;
+DECLARE i varchar(20);
+DECLARE n varchar(100);
+DECLARE curs1 CURSOR FOR SELECT roll_no,name FROM Student;
+DECLARE CONTINUE HANDLER FOR NOT FOUND SET done=1;
+OPEN curs1;
+read_loop:LOOP
+FETCH curs1 INTO i,n;
+IF done=1 THEN
+LEAVE read_loop;
+END IF;
+SELECT i,n;
+END loop read_loop;
+CLOSE curs1;
+end;
+$$
+
+CALL CPr(); $$
+
+-- 2)
+CREATE PROCEDURE c1()
+BEGIN
+DECLARE last_row int default 0;
+DECLARE cname varchar(20);
+DECLARE cgpa int;
+DECLARE cur1 cursor for SELECT name,CGPA FROM student;
+DECLARE CONTINUE HANDLER FOR NOT FOUND SET last_row =1;
+OPEN cur1;
+myloop:LOOP
+FETCH cur1 INTO cname,cgpa;
+IF last_row=1 THEN
+SELECT 'no record found' AS "message";
+LEAVE myloop;
+END IF;
+SELECT cname;
+END LOOP myloop;
+CLOSE cur1;
+end;$$
+
+CALL c1()$$
+
+
+
+--PROCEDURES AND FUNCTIONS
+
+--FUNCTIONS
+Delimiter $$
+CREATE FUNCTION proprice(sell_price double) RETURNS varchar(20)
+DETERMINISTIC
+BEGIN
+DECLARE lvl varchar(20);
+IF sell_price<1000 THEN
+SET lvl='CHEAP';
+ELSEIF sell_price>3000 THEN
+SET lvl='EXPENSIVE';
+END IF;
+RETURN(lvl);
+END;
+$$
+
+SELECT product_no,proprice(sell_price) from product_master; $$
+
+-- PROCEDURES
+-- 1)
+Delimiter $$
+CREATE PROCEDURE my_pro(IN client_no int)
+BEGIN
+SELECT * from Client_master LIMIT client_no;
+END;
+$$
+
+CALL my_pro(4);$$
+
+-- 2)
+CREATE PROCEDURE mp_1(OUT Client_no int)
+BEGIN
+SELECT COUNT(*) INTO Client_no FROM Client_master;
+END;$$
+
+CALL mp_1(@a); 
+SELECT @a;$$
+
 ```
 
 https://programforamitystudent.blogspot.com/2009/11/plsqlall-programs.html
