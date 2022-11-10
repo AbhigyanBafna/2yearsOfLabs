@@ -4,7 +4,7 @@
 
 -- COMMANDS
 
-mysql -u root -p -- Used to Start mysql
+mysql -u root -p
 
 
 
