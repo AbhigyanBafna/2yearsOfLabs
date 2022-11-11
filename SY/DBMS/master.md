@@ -38,7 +38,7 @@ SELECT Description FROM Product_master WHERE Sell_price > 2000 AND Sell_price <=
 SELECT Description, Sell_price*0.15 “NEW_PRICE” FROM PRODUCT_MASTER WHERE Sell_price > 5000;
 
 -- List product in sorted order of their description.
-SELECT Description FROM Product_master ORDER BY Description;
+SELECT Description FROM Product_master ORDER BY Description ASC;
 
 -- Count the number of products having price less than 15000.
 SELECT COUNT(*) FROM Product_master WHERE Sell_price >15000;
@@ -49,6 +49,8 @@ SELECT MIN(Sell_price), MAX(Sell_price), AVG(Sell_price), AVG(Cost_price) FROM P
 -- Calculate the Sqrt price of each Product.
 SELECT SQRT(Sell_price) FROM Product_master;
 
+-- Divide the cost of product '540 HDD' by difference between its price and 100.
+SELECT Cost_price/(Cost_price - 100) AS Difference from product_master WHERE Description = 'HDD' ;
 
 
 -- COMPLEX QUERIES
