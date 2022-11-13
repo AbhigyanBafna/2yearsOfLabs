@@ -10,7 +10,7 @@ to do it. It is left up to the compiler to figure out the how. Ex- Prolog, SQL.
 <br>
 
 <b> Knowledge Base Syntax </b>
-```
+```prolog
 loves(romeo,juliet).                          /* This is how a fact is written. Fact - Romeo loves Juilet */
 happy(albert). happy(alice).                    
 with_albert(alice).
@@ -85,7 +85,7 @@ count_to_10(X) :-                 /* The Loop */
 ```
 
 <b> Queries Syntax </b>
-```
+```prolog
 change_directory('/Users/abhi/Desktop/Prolog_Practice').
 
 [knowledgeBase]. /* Loads the knowledge base in your current directory */
