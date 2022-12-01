@@ -9,7 +9,7 @@ commit or was busy watching a marvel movie. Anyways, if you do have something th
 then by all means go ahead and <i><b>contribute!</b></i> I will probably add the `contributing.md` once I get the hang
 of that. <br>
 
-## The IT Life
+### The IT Life
 > Knowledge acquired while gaining my Bachelors.
 
 1. Freshers (FE)
