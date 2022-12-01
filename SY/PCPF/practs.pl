@@ -1,3 +1,6 @@
+/* Codes asked in practical exams. */
+
+/* WAP to calculate area of a cylinder with user input in prolog */
 cylinder:-
          write('Enter Radius'),
          read(R),
@@ -7,7 +10,7 @@ cylinder:-
          write('Area of Cylinder is:'),
          format("~2f",[A]).
 
-
+/* WAP to sum only the positive elements of a list in prolog. */
 sumPositive([],0).
 sumPositive([H|T],Sum) :-
     H > 0,
