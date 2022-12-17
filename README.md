@@ -12,7 +12,8 @@ of that. <br>
 ### The IT Life
 > Knowledge acquired while gaining my Bachelors.
 
-1. Freshers (FE)
-2. Internship dedo (SE)
-3. Loading... (TE)
-4. Loading... (BE)
+1. [Database Management Systems](https://github.com/AbhigyanBafna/brain2/tree/main/SY/DBMS) (DBMS)
+2. [Data Structures and Algorithms](https://github.com/AbhigyanBafna/brain2/tree/main/SY/DSA) (DSA)
+3. [Paradigms and Computer Science Fundamentals](https://github.com/AbhigyanBafna/brain2/tree/main/SY/PCPF) (PCPF)
+4. [Java](https://github.com/AbhigyanBafna/brain2/tree/main/SY/Java)
+5. [Python](https://github.com/AbhigyanBafna/brain2/tree/main/SY/Python)
