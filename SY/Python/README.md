@@ -14,9 +14,9 @@
 3. Python relies on using whitespaces for various purposes which enhances readability compared to programming languages which often use something like curly-braces { }.
 
 ## Index
-1. Modules and Package Managers
-2. Basics 1
-3. Basics 2
+1. [Modules and Package Managers](## Modules and Package Managers)
+2. [Basics 1](# Basics-1)
+3. [Basics 2](## Basics 2)
 
 ## Modules and Package Managers
 
@@ -102,7 +102,7 @@ Python works with an interpreter and executing code line by line can get very sl
 	
 	```
 
-7. Programming languages use operators to perform various tasks. Python has a variety of **arithmetic operators** used to perform calculations.
+7. Programming languages use operators to perform various tasks. Python has a variety of **Arithmetic operators** used to perform calculations.
 
 	| Operator  | Operation      | Example |
 	| --------- | -------------- | ------- | 
@@ -116,7 +116,7 @@ Python works with an interpreter and executing code line by line can get very sl
 
 	[calculatorV1.py](https://github.com/AbhigyanBafna/brain2/blob/main/SY/Python/calculatorV1.py)
 
-8. Typecasting is the conversion of one data type into another data type. Python supports a wide variety of typecasting functions like 
+8. **Typecasting** is the conversion of one data type into another data type. **User input** can be taken using the input() function. This returns a string value and hence if required we need to typecast them.  Python supports a wide variety of typecasting functions like 
  
 	1. int()
 	2. float()
@@ -132,25 +132,20 @@ Python works with an interpreter and executing code line by line can get very sl
 
 	```python
 	#Explicit Typecasting
-a = "400"
-b = "600"
-print(int(a) + int(b))
+	a = "400"
+	b = "600"
+	print(int(a) + int(b))
 	
 	
 	#Implicit TypeCasting
-c = 1.9
-d = 8
-print(c + d)
-	```
+	c = 1.9
+	d = 8
+	print(c + d)
 	
-9. **User input** can be taken using the input() function. This returns a string value and hence if required we need to typecast them.
-
-	Ex - 
-	
-	```python
-num1 = int(input())
-num2 = float(input())
-print(x + y)
+	#User Input
+	num1 = int(input())
+	num2 = float(input())
+	print(x + y)
 	```
 	
 10. **Strings and its Methods.** There are a lot of ways we use to print strings. Also using the len() method we can get its length. Strings can also be sliced to print a custom part of the string. Let's look at examples -
@@ -186,8 +181,9 @@ print(x + y)
 		
 	```
 	
-	There are a ton of methods which can help us modify strings in all ways we can imagine. **Strings are immutable**. The way string methods work are by creating a new mordified string using the previous string. 
-	Examples in - [stringMethods.py](https://github.com/AbhigyanBafna/brain2/blob/main/SY/Python/stringMethods.py)
+	There are a ton of methods which can help us modify strings in all ways we can imagine. **Strings are immutable**. The way string methods work are by creating a new mordified string using the previous string.
+	
+	Examples : [stringMethods.py](https://github.com/AbhigyanBafna/brain2/blob/main/SY/Python/stringMethods.py)
 	
 11. **Conditional Operators and elif** Elif statements are simply more if statements for an if-else conditional. If-else statements work on conditional operators which are - 
 
@@ -206,10 +202,11 @@ print(x + y)
 	3. nested if-elif-else.
 
 	Examples : [elif.py](https://github.com/AbhigyanBafna/brain2/blob/main/SY/Python/elif.py)
+	> Note : = is used for assigning values and == is used to evaluation.
 	
 12.
 	
-> Note : '=' is used for assigning values and == is used to evaluation.
+
 	
 	
 > Remember : In Python everything is an object
