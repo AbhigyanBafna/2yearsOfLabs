@@ -114,7 +114,7 @@ Python works with an interpreter and executing code line by line can get very sl
 	| %         | Modulus        | 3 % 55  | 
 	| //        | Floor Division | 3 // 55 |       
 
-	[calculatorV1.py]()
+	[calculatorV1.py](https://github.com/AbhigyanBafna/brain2/blob/main/SY/Python/calculatorV1.py)
 
 8. Typecasting is the conversion of one data type into another data type. Python supports a wide variety of typecasting functions like 
  
@@ -187,7 +187,7 @@ print(x + y)
 	```
 	
 	There are a ton of methods which can help us modify strings in all ways we can imagine. **Strings are immutable**. The way string methods work are by creating a new mordified string using the previous string. 
-	Examples in - [stringMethods.py]()
+	Examples in - [stringMethods.py](https://github.com/AbhigyanBafna/brain2/blob/main/SY/Python/stringMethods.py)
 	
 11. **Conditional Operators and elif** Elif statements are simply more if statements for an if-else conditional. If-else statements work on conditional operators which are - 
 
@@ -205,7 +205,7 @@ print(x + y)
 	2. if-elif-else.
 	3. nested if-elif-else.
 
-	Examples : elif.py
+	Examples : [elif.py](https://github.com/AbhigyanBafna/brain2/blob/main/SY/Python/elif.py)
 	
 12.
 	
