@@ -14,9 +14,9 @@
 3. Python relies on using whitespaces for various purposes which enhances readability compared to programming languages which often use something like curly-braces { }.
 
 ## Index
-1. [Modules and Package Managers](## Modules and Package Managers)
-2. [Basics 1](# Basics-1)
-3. [Basics 2](## Basics 2)
+1. [Modules and Package Managers](#Modules-and-Package-Managers)
+2. [Basics 1](#Basics-1)
+3. [Basics 2](#Basics-2)
 
 ## Modules and Package Managers
 
