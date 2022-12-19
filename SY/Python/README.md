@@ -103,7 +103,7 @@ Python works with an interpreter and executing code line by line can get very sl
 	| %         | Modulus        | 3 % 55  | 
 	| //        | Floor Division | 3 // 55 |       
 
-	[calculatorV1.py](https://github.com/AbhigyanBafna/brain2/blob/main/SY/Python/calculatorV1.py)
+	Examples : [calculatorV1.py](https://github.com/AbhigyanBafna/brain2/blob/main/SY/Python/calculatorV1.py)
 
 8. **Typecasting** is the conversion of one data type into another data type. **User input** can be taken using the input() function. This returns a string value and hence if required we need to typecast them.  Python supports a wide variety of typecasting functions like 
  
