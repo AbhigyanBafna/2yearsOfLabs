@@ -47,24 +47,13 @@ Python works with an interpreter and executing code line by line can get very sl
 	multiline comment. """
 	```
 
-3. **If-else** statements are blocks of code which execute according to conditions. If the condition is true then if block is executed, if not, the else block is executed.
-
-	```python
-	p = 7 
-	
-	if (p > 5):
-	    print("p is greater than 5.") #Condition is true hence this will execute.
-	else:
-	    print("p is not greater than 5.")
-	```
-
 4. **Escape Sequence Characters** are used to insert characters that cannot be directly used in a string.
 
 	Ex -
 	`print("These are double quotes - \" and \n I just wrote in new line.")`
 	( \n and \\" are the ESC)
 	
-5. **Variables** are like containers that store data in memory. 
+5. **Variables** are like containers that store data in memory. They must start with a letter/underscore, can only contain alpha-numeric characters and are case-sensitive.
 	
 	Ex -
 	 `cont1 = 1231; print(cont1)`
@@ -185,7 +174,7 @@ Python works with an interpreter and executing code line by line can get very sl
 	
 	Examples : [stringMethods.py](https://github.com/AbhigyanBafna/brain2/blob/main/SY/Python/stringMethods.py)
 	
-11. **Conditional Operators and elif** Elif statements are simply more if statements for an if-else conditional. If-else statements work on conditional operators which are - 
+11. **If-else** statements are blocks of code which execute according to conditions. If the condition is true then if block is executed. If not, the else block is executed. Elif statements are simply more if statements for an if-else 	conditional. All of this works on **conditional operators** -
 
 	| Operator  | Operation      | Example | Evaluation |
 	| --------- | -------------- | ------- | ---------- |
@@ -202,14 +191,94 @@ Python works with an interpreter and executing code line by line can get very sl
 	3. nested if-elif-else.
 
 	Examples : [elif.py](https://github.com/AbhigyanBafna/brain2/blob/main/SY/Python/elif.py)
-	> Note : = is used for assigning values and == is used to evaluation.
+	> Note '=' is used for assigning values and '==' is used to evaluation.
 	
-12.
+12. **Match Case** statement takes the value of a given variable and tries to match it with different values(pattern) until it matches one which then executes that particular block of code. Ex -
+
+	```python
+	x = int(input("Enter the value of x: ")) # x is the variable to match
+	
+	match x:
+    case 0:
+        print("x is zero") # if x = 0 this will print
+        
+    case 4:
+        print("case is 4") # if x = 4 this will print
+
+    case _: 
+        print("no match") # _ marks a default case (A case when nothing matches).
+        
+    case _ if x!=80:
+        print(x, "is not 80") # we can also add if conditionals to cases.
+	```
+	
+11. **Loops** check for certain conditions and then execute a group of statements certain number of times. The are three types of loops -
+	1. **for loop** - These are mainly used when the number of iterations are known. To iterate specific number of times range() is used.
+	2. **while loop** - Used when iterations are unknown
+	3. **do-while loop** - Executes the statements once without any checks and then acts like a while loop.
+	
+	Examples : [loops.py](https://github.com/AbhigyanBafna/brain2/blob/main/SY/Python/loops.py)
+	
+	**Break** terminates the loop entirely, hence skipping all further iterations of the loop while the **Continue** statement only skips the current iteration and moves to the next iteration. Ex -
+
+	```
+	#Prints Table of 5 but only skips 5x10.
+	for i in range(13):
+	if(i == 10):
+	print("Skip the iteration") 
+	continue
+	print("5 X", i, "=", 5 * i)
+	  	
+	#Breaks when counter reaches 50
+	i = 0
+while True:
+  print(i)
+  i = i + 1
+  if(i%51 == 0):
+    break
+  	```
+  	
+> Remember : In Python everything is an object
+
+<br>
+
+
+## Basics 2
+
+###Functions
+They are blocks of code that performs a specific task whenever called. They are very useful in huge programs where lots of repititions are required and make the program flow organized. Ex -
+
+```python
+def name(fname, lname):
+	print("Hello,", fname, lname)
+	
+name("Sam", "Wilson") #Calling a function
+```
+
+There are two types of functions broadly -
+
+ 1. **Built-in functions** -
+	These are pre-coded in python. Ex - min(), max(), len(), range(), dict(), 	list(), print(), etc.
+ 	
+ 2. **User-defined functions** -
+	These are functions created by us to perform specific tasks as per our 	needs.
+
+Syntax:
+	
+```python
+def functionName(parameters):
+pass
+#Your code here.
+```
+
+
+
+
 	
 
 	
 	
-> Remember : In Python everything is an object
+
 
 
 	
