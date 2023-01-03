@@ -286,14 +286,29 @@ namerAdv(fname = "Howard", mname = "Tony", lname = "Stark") #Variable using Dict
 
 ```
 
-### Lists
-They are indexed collection of items under a singe variable. We can alter them after creation but unlike arrays it supports multiple data types.
+### Lists and Tuples
+**Lists** are indexed collection of items under a singe variable. We can alter them after creation but unlike arrays it supports multiple data types.
 
 We can check for list elements using the `in` keyword, range bound them by using `[num1 : num2]`, also create lists on the go by using comprehension.
 
 There also exist many list methods in python such as sort(), append() insert() etc.
 
 Examples : [lists.py](https://github.com/AbhigyanBafna/brain2/blob/main/SY/Python/lists.py)
+
+**Tuples** are similar to lists. The main difference between the two is that tuples immutable (cannot be changed after creation). Rest almost everything from slicing to methods everything is similar to lists. Ex-
+
+```python
+tup1 = (5,4,3)
+tup = (33,) #A tuple with one element needs a comma to distinguish it from an integer.
+
+#To change tuples we can convert them into lists, do the changes and then convert them back to tuples.
+countries = ("India", "Pakistan", "Bangladesh")
+temp = list(countries) 
+#Changes to temp here.
+countries = tuple(temp)
+
+newTup = tup1 + countries #Tuples can be concatenated into a new tuple.
+```
 
 
 
