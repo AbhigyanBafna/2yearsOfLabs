@@ -246,16 +246,7 @@ while True:
 ## Basics 2
 
 ###Functions
-They are blocks of code that performs a specific task whenever called. They are very useful in huge programs where lots of repititions are required and make the program flow organized. Ex -
-
-```python
-def name(fname, lname):
-	print("Hello,", fname, lname)
-	
-name("Sam", "Wilson") #Calling a function
-```
-
-There are two types of functions broadly -
+They are blocks of code that performs a task when called and may also return a value. Useful in huge programs with a lot of repititions making the program flow organized. Broadly they are -
 
  1. **Built-in functions** -
 	These are pre-coded in python. Ex - min(), max(), len(), range(), dict(), 	list(), print(), etc.
@@ -263,13 +254,48 @@ There are two types of functions broadly -
  2. **User-defined functions** -
 	These are functions created by us to perform specific tasks as per our 	needs.
 
-Syntax:
+**Function arguments** are values given to parameters while calling the function. Some of them are -
+
+1. Default Arguments - Provides a default value to parameters in case of no input from user.
+2. Keyword Arguments - The order of arguments can be changed by declaring a key = value pair.
+3. Variable Length Arguments - Accepts multiple arguments without defining them by using tuples (&ast;name) or dictionary (**parameter name).
+
+Syntax and Ex:
 	
 ```python
 def functionName(parameters):
-pass
-#Your code here.
+	#Your code here.
+	
+	
+def avg( a, b=10):
+	print( (a+b)/2 )
+	
+avg(4) #'a' is a required variable, hence a=4, b=10(Default)
+avg(b = 44, a = 43) #Keyword Arguments
+
+
+def namer(*name):
+	print( name[0], name[1], name[2] )
+	
+def namerAdv(**name):
+	print(name["fname"], name["mname"], name["lname"] )
+	
+namer("Tony", "Howard", "Stark") #Variable using Tuple
+namerAdv(fname = "Howard", mname = "Tony", lname = "Stark") #Variable using Dict.
+	
+
 ```
+
+###Lists
+They are indexed collection of items under a singe variable. We can alter them after creation but unlike arrays it supports multiple data types.
+
+We can check for list elements using the `in` keyword, range bound them by using `[num1 : num2]`, also create lists on the go by using comprehension.
+
+There also exist many list methods in python such as sort(), append() insert() etc.
+
+Examples : [lists.py](https://github.com/AbhigyanBafna/brain2/blob/main/SY/Python/lists.py)
+
+
 
 
 
