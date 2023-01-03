@@ -245,7 +245,7 @@ while True:
 
 ## Basics 2
 
-###Functions
+### Functions
 They are blocks of code that performs a task when called and may also return a value. Useful in huge programs with a lot of repititions making the program flow organized. Broadly they are -
 
  1. **Built-in functions** -
@@ -286,7 +286,7 @@ namerAdv(fname = "Howard", mname = "Tony", lname = "Stark") #Variable using Dict
 
 ```
 
-###Lists
+### Lists
 They are indexed collection of items under a singe variable. We can alter them after creation but unlike arrays it supports multiple data types.
 
 We can check for list elements using the `in` keyword, range bound them by using `[num1 : num2]`, also create lists on the go by using comprehension.
