@@ -1,8 +1,8 @@
 # Basics 2
 
 ## Index
-1. [Functions](#-Functions)
-2. [Basics 2]( #-**3.-Sets-and-Dictionaries**)
+1. [Functions](#Functions)
+2. [Basics 2](#Lists-and-Tuples)
 
 ### **Functions**
 They are blocks of code that performs a task when called and may also return a value. Useful in huge programs with a lot of repititions making the program flow organized. Broadly they are -
@@ -53,7 +53,7 @@ namerAdv(fname = "Howard", mname = "Tony", lname = "Stark") #Variable using Dict
 <br>
  
 
-### **2. Lists and Tuples**
+### **Lists and Tuples**
 **Lists** are indexed collection of items under a singe variable. We can alter them after creation but unlike arrays it supports multiple data types.
 
 We can check for list elements using the `in` keyword, range bound them by using `[num1 : num2]`, also create lists on the go by using comprehension.
@@ -79,7 +79,7 @@ newTup = tup1 + countries #Tuples can be concatenated into a new tuple.
 
 <br>
  
- ### **3. Sets and Dictionaries**
+ ### **Sets and Dictionaries**
  **Sets** are a collection of items under a single variable. Sets are immutable and also only store unique values. They do not maintain any order and hence don't have indexing.
 
  <br>
