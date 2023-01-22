@@ -1,8 +1,8 @@
 # Basics 2
 
 ## Index
-2. [Basics 1](#Basics-1)
-3. [Basics 2](#Basics-2)
+2. [Functions](###1.-Functions)
+3. [Basics 2]( ###-**3.-Sets-and-Dictionaries**)
 
 ### **1. Functions**
 They are blocks of code that performs a task when called and may also return a value. Useful in huge programs with a lot of repititions making the program flow organized. Broadly they are -
