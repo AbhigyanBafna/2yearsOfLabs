@@ -53,7 +53,7 @@ namerAdv(fname = "Howard", mname = "Tony", lname = "Stark") #Variable using Dict
 <br>
  
 
-### **Lists and Tuples**
+### **2.Lists and Tuples**
 **Lists** are indexed collection of items under a singe variable. We can alter them after creation but unlike arrays it supports multiple data types.
 
 We can check for list elements using the `in` keyword, range bound them by using `[num1 : num2]`, also create lists on the go by using comprehension.
