@@ -16,4 +16,4 @@ of it. <br>
 2. [Data Structures and Algorithms](https://github.com/AbhigyanBafna/brain2/tree/main/SY/DSA) (DSA)
 3. [Paradigms and Computer Science Fundamentals](https://github.com/AbhigyanBafna/brain2/tree/main/SY/PCPF) (PCPF)
 4. [Java](https://github.com/AbhigyanBafna/brain2/tree/main/SY/Java)
-5. [Python](https://github.com/AbhigyanBafna/brain2/tree/main/SY/Python)
+5. [Python](https://github.com/AbhigyanBafna/brain2/tree/main/SY/Python#readme)
