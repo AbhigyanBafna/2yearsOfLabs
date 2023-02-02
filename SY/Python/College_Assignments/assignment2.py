@@ -1,8 +1,8 @@
 '''
-Write a python program to create a list where the number of elements 
+Q1) Write a python program to create a list where the number of elements 
 are taken from the user. Further add even numbers from list and odd 
 numbers from list. These two numbers should be displayed as tuples.
-
+'''
 
 n = int(input("Enter number of elements:"))
 list1 = []
@@ -22,13 +22,13 @@ for i in range(n):
 evOdd = (even,odd)
 print(evOdd)
 
-
-Given the list list 1 = [x,y,z]
+'''
+Q2) Given the list list 1 = [x,y,z]
 Write a list comprehension to produce the following list -
 
 A) [x,xx,xxx,y,yy,yyy,z,zz,zzz]
 B) [x,y,z,xx,yy,zz,xxx,yyy,zzz]
-
+'''
 
 list1 = ['x','y','z']
 list2 = [lst1*num for lst1 in list1 for num in range(1,4)]
@@ -39,19 +39,12 @@ print(list3)
 
 
 
-
-Given a tuple of elements, write a python program to create 
+'''
+Q3) Given a tuple of elements, write a python program to create 
 a dictionary with tuple elements as a key and its count in 
 tuple as value e.g t = (4,5,6,2,3,4,5,1,2,6,4) then output 
 should be d = {4:3,5:2,2:2,3:1,1:1}
-
-Write a python program to print tuple of website suffixes 
-e.g (com,edu,net,in) from given dictionary 
-{ 1:"www.yahoo.com",
-  2:"www.tsec.edu",    
-  3:"www.asp.net",
-  4:"www.abcd.in"}
-
+'''
 
 t = (4,5,6,2,3,4,5,1,2,6,4)
 keys = []
@@ -68,6 +61,14 @@ for j in keys:
 for i in range(len(keys)):
     d1[keys[i]] = values[i]
 print(d1)
+
+'''
+Q4) Write a python program to print tuple of website suffixes 
+from given dictionary 
+{ 1:"www.yahoo.com",
+  2:"www.tsec.edu",    
+  3:"www.asp.net",
+  4:"www.abcd.in"}
 '''
 
 d2 = {
@@ -76,8 +77,12 @@ d2 = {
   3:"www.asp.net",
   4:"www.abcd.in"}
 
-t1 = ()
-for i len(d2)
+suffixes = []
+
+for url in d2.values():
+    suffix = url.split(".")[-1]
+    suffixes.append(suffix)
+print(tuple(suffixes))
 
 
     
