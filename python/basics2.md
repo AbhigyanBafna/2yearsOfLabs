@@ -61,7 +61,7 @@ We can check for list elements using the `in` keyword, range bound them by using
 
 There also exist many list methods in python such as sort(), append() insert() etc.
 
-Examples : [lists.py](https://github.com/AbhigyanBafna/brain2/blob/main/SY/Python/lists.py)
+Examples : [lists.py](https://github.com/AbhigyanBafna/brain2/tree/main/python/programs/lists.py)
 
 **Tuples** are similar to lists. The main difference between the two is that tuples immutable (cannot be changed after creation). Rest almost everything from slicing to methods everything is similar to lists. Ex-
 
