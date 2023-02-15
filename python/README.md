@@ -25,6 +25,6 @@ Ex - `pip install pandas` (module name = pandas).
 Python works with an interpreter and executing code line by line can get very slow. To overcome this we use a script file with the .py extension which executes all the code in one go.
 
 ## Index
-1. [Assignments](https://github.com/AbhigyanBafna/brain2/tree/main/SY/Python/College_Assignments)
+1. [Assignments](https://github.com/AbhigyanBafna/brain2/tree/main/SY/Python/assignments)
 2. [Basics 1](https://github.com/AbhigyanBafna/brain2/blob/main/SY/Python/basics1.md)
 3. [Basics 2](https://github.com/AbhigyanBafna/brain2/blob/main/SY/Python/basics2.md)
