@@ -72,7 +72,7 @@
 	| %         | Modulus        | 3 % 55  | 
 	| //        | Floor Division | 3 // 55 |       
 
-	Examples : [calculatorV1.py](https://github.com/AbhigyanBafna/brain2/blob/main/SY/Python/calculatorV1.py)
+	Examples : [Calculator](https://github.com/AbhigyanBafna/brain2/tree/main/python/programs/calc.py)
 
 8. **Typecasting** is the conversion of one data type into another data type. **User input** can be taken using the input() function. This returns a string value and hence if required we need to typecast them.  Python supports a wide variety of typecasting functions like 
  
@@ -141,7 +141,7 @@
 	
 	There are a ton of methods which can help us modify strings in all ways we can imagine. **Strings are immutable**. The way string methods work are by creating a new mordified string using the previous string.
 	
-	Examples : [stringMethods.py](https://github.com/AbhigyanBafna/brain2/blob/main/SY/Python/stringMethods.py)
+	Examples : [stringMethods.py](https://github.com/AbhigyanBafna/brain2/tree/main/python/programs/stringMethods.py)
 	
 11. **If-else** statements are blocks of code which execute according to conditions. If the condition is true then if block is executed. If not, the else block is executed. Elif statements are simply more if statements for an if-else 	conditional. All of this works on **conditional operators** -
 
@@ -159,7 +159,7 @@
 	2. if-elif-else.
 	3. nested if-elif-else.
 
-	Examples : [elif.py](https://github.com/AbhigyanBafna/brain2/blob/main/SY/Python/elif.py)
+	Examples : [elif.py](https://github.com/AbhigyanBafna/brain2/tree/main/python/programs/elif.py)
 	> Note '=' is used for assigning values and '==' is used to evaluation.
 	
 12. **Match Case** statement takes the value of a given variable and tries to match it with different values(pattern) until it matches one which then executes that particular block of code. Ex -
@@ -186,7 +186,7 @@
 	2. **while loop** - Used when iterations are unknown
 	3. **do-while loop** - Executes the statements once without any checks and then acts like a while loop.
 	
-	Examples : [loops.py](https://github.com/AbhigyanBafna/brain2/blob/main/SY/Python/loops.py)
+	Examples : [loops.py](https://github.com/AbhigyanBafna/brain2/tree/main/python/programs/loops.py)
 	
 	**Break** terminates the loop entirely, hence skipping all further iterations of the loop while the **Continue** statement only skips the current iteration and moves to the next iteration. Ex -
 
