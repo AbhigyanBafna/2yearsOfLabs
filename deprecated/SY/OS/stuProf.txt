@@ -1,0 +1,13 @@
+STUDENT PROFILE
+Name : Abhigyan
+Surname : Bafna
+Middle Name : Sanjay
+Roll No : 01
+Branch : IT
+Year : Second Year
+Sem : 4th
+Address : 256-A, 512-Y, 1024-Z
+DOB : 14/09/2002
+Age : 20
+
+
