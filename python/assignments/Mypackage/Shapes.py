@@ -11,7 +11,7 @@ class sphere(shape):
         self.r = radius
     
     def volume(self):
-        self.vol = (4/3)*3.14*self.r**2
+        self.vol = (4/3)*3.14*self.r**3
         print(self.vol)
 
 class cube(shape):
