@@ -1,9 +1,7 @@
-echo "Enter the number -"
-read n
 i=1
 while [ $i -le 12 ]
 do
-let res="$i * $n"
-echo "$n x $i = $res"
+let res="$i * $1"
+echo "$1 x $i = $res"
 ((i++))
 done
