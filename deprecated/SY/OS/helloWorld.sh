@@ -1,17 +1,11 @@
-echo "Enter Name : "
-read name
-echo "Enter surname : "
-read surname 
-mkdir $surname
-cd $surname
-touch "$name.c"
-echo "#include <stdio.h>" >> "$name.c"
-echo "int main() {" >> "$name.c"
-echo "   printf(\"Hello, World!\n\");" >> "$name.c"
-echo "   return 0;" >> "$name.c"
-echo "}" >> "$name.c"
-gcc "$name.c" -o $name
-./$name
+mkdir $2
+cd $2
+touch "$1.c"
+echo '#include <stdio.h>
 
-
-
+int main() {
+    printf("Hello, world!\n");
+    return 0;
+}' > "$1.c"
+gcc "$1.c" -o $1
+./$1
