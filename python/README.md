@@ -25,5 +25,5 @@ Python works with an interpreter and executing code line by line can get very sl
 8. [abstracts&Interfaces](https://github.com/AbhigyanBafna/brain2/blob/main/python/6_abstracts.py)
 9. [overloading](https://github.com/AbhigyanBafna/brain2/blob/main/python/7_overloading.py)
 10. [packages](https://github.com/AbhigyanBafna/brain2/blob/main/python/8_packages.py)
-11. [QB](https://github.com/AbhigyanBafna/brain2/blob/main/python/buttload.py) (A huge list of 120ish Programs)
+11. [QB](https://github.com/AbhigyanBafna/brain2/blob/main/python/buttload.pdf) (A huge list of 120ish Programs)
 
