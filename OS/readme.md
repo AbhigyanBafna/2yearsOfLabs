@@ -6,5 +6,5 @@
 4. [rollTable](https://github.com/AbhigyanBafna/brain2/blob/main/OS/4_table.sh)
 5. [nameplate](https://github.com/AbhigyanBafna/brain2/blob/main/OS/5_nameplate.pl)
 6. [exponent](https://github.com/AbhigyanBafna/brain2/blob/main/OS/6_exponent.pl)
-7. [profitLoss](https://github.com/AbhigyanBafna/brain2/blob/main/OS/7_profitLoss.pl)x
+7. [profitLoss](https://github.com/AbhigyanBafna/brain2/blob/main/OS/7_profitLoss.pl)
 8. [grepAwkSED](https://github.com/AbhigyanBafna/brain2/blob/main/OS/grepAwkSED.md)
