@@ -1,16 +1,3 @@
 # Hello!
 
->An attempt to build a second brain! 🧠
-
-<br>
-
-Hey, you will find my 'note-worthy' knowledge, over a variety of topics that have interested me below 👇🏻. Unless ofcourse I forgot to 
-commit or bunked college. If you do have something that you think will enhance this repo, then please do open a PR! I will add a `contributing.md` once I get the hang of it. <br>
-
-# Index
-1. [Data Structures and Algorithms](https://github.com/AbhigyanBafna/brain2/tree/main/DSA#readme) (DSA)
-2. [Java](https://github.com/AbhigyanBafna/brain2/tree/main/Java#readme)
-3. [Computer Organization and Arch.](https://github.com/AbhigyanBafna/brain2/tree/main/COA) (Microprocessor)
-4. [Operating Systems](https://github.com/AbhigyanBafna/brain2/tree/main/OS#readme) (OS)
-5. [Python](https://github.com/AbhigyanBafna/brain2/tree/main/python#readme)
-6. [Computer Networks](https://github.com/AbhigyanBafna/brain2/tree/main/CN)
+Contains a lot of lab assignments done by me during 1st and 2nd Year of college. Archived due to it being a mess. May be useful for some tho.
