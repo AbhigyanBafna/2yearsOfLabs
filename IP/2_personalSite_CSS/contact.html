@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./CSS/global.css">
+    <style>
+
+        #contact-heading {
+            color: #007BFF;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        #contact-divider {
+            border: 2px solid #007BFF;
+            margin: 20px auto;
+        }
+
+        .contact-list {
+            margin-left: 20px;
+            list-style-type: none;
+        }
+
+        .contact-item {
+            margin-bottom: 10px;
+        }
+
+        .contact-link {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        .contact-link:hover {
+            text-decoration: underline;
+        }
+
+        #contact-form {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        #contact-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        #contact-form input[type="text"],
+        #contact-form input[type="email"],
+        #contact-form textarea {
+            width: 100%;
+            max-width: 300px;
+            padding: 8px;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+
+        #contact-form input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            padding: 10px 15px;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        #contact-form input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h3 id="contact-heading">Contact Information</h3>
+    <ol class="contact-list">
+        <li class="contact-item">Email : <a href="mailto:abhigyanbafna7@gmail.com" class="contact-link">abhigyanbafna7@gmail.com</a></li>
+        <li class="contact-item">Instagram : <a href="https://www.instagram.com/abhigyanbafna/" class="contact-link">@abhigyanbafna</a></li>
+        <li class="contact-item">Twitter : <a href="https://www.twitter.com/abhigyan_bafna/" class="contact-link">@Abhigyan_Bafna</a></li>
+        <li class="contact-item">GitHub : <a href="https://www.Github.com/abhigyanbafna/" class="contact-link">AbhigyanBafna</a></li>
+        <li class="contact-item">LinkedIn : <a href="https://www.Linkedin.com/in/abhigyanbafna/" class="contact-link">AbhigyanBafna</a></li>
+    </ol>
+    <hr id="contact-divider" color="blue">
+    <form id="contact-form" action="mailto:abhigyanbafna7@gmail.com" method="post" enctype="text/plain">
+        <label for="name">Your Name :</label>
+        <input type="text" name="My Name is" id="name"><br>
+        <label for="email">Your Email :</label>
+        <input type="email" name="My Email is " id="email"><br>
+        <label for="message">Message :</label>
+        <textarea name="My Message is " rows="10" cols="20" id="message"></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

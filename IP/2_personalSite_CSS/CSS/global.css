@@ -1,0 +1,40 @@
+
+body{
+    background-color:#eaf6f6;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; 
+}
+
+a:visited {
+color: #4CAF50;
+}
+
+
+a:active {
+color: #ff4500;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+h1 {
+    color: #007BFF;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    font-size: 18px;
+    color: #444;
+}
