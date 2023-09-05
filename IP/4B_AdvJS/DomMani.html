@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM Manipulation Example</title>
+        <style>
+            #shape {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                margin: 20px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+    <p id="title">Hello World!</p>
+
+    <div id="shape"></div>
+
+    <button onclick="changeTitle()">Change Title</button>
+    <button onclick="increment()">+ Size</button>
+    <button onclick="decrement()">- Size</button>
+    <button onclick="changeShape()">Change Shape</button>
+
+    <script>
+        let i = 0;
+        const sizeIncrement = 10; // Define a constant for size increment
+
+        function changeTitle() {
+            i++;
+            i = i%3;
+            console.log(i);
+
+            if (i == 0) {
+                document.getElementById("title").innerHTML = "Hello World!";
+            } else if (i == 1) {
+                document.getElementById("title").innerHTML = "Hello Javascript!";
+            } else if (i == 2) {
+                document.getElementById("title").innerHTML = "Hello Python!";
+            }
+        }
+
+        function increment(){
+            const shape = document.querySelector("#shape");
+            const w = shape.offsetWidth + sizeIncrement;
+            shape.style.width = w + "px";
+            shape.style.height = w + "px";
+        }
+
+        function decrement(){
+            const shape = document.querySelector("#shape");
+            const w = shape.offsetWidth - sizeIncrement;
+            if (w > 0) { // Ensure the width doesn't go negative
+                shape.style.width = w + "px";
+                shape.style.height = w + "px";
+            }
+        }
+
+        function changeShape(){
+            const shape = document.querySelector("#shape");
+            if (shape.style.borderRadius === "50%") {
+                shape.style.borderRadius = "0%";
+            } else {
+                shape.style.borderRadius = "50%";
+            }
+        }
+    </script>
+
+    </body>
+</html>
