@@ -1,38 +1,11 @@
+import React from 'react';
 
-import React from 'react'
-
-class TodaysDate extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      count: 0
-    };
-  }
-
-  increment = () => {
-    this.setState(prevCount => ({
-      count: prevCount.count + 1
-    }))
-  }
-
-  decrement = () => {
-    this.setState(prevCount => ({
-      count: prevCount.count - 1
-    }))
-  }
-
-  render(){
-
+function TodaysDate(props) {
     return (
-      <div>
-        {this.props.date.toString()}
-        <h3 className='counter'>Count : {this.props.count}</h3>
-        <button onClick={this.increment}>Increment </button>
-        <button onClick={this.decrement}>Decrement </button>
+        <div>
+            <h2>Current Date: {props.currentDate}</h2>
         </div>
     );
-  }
-
 }
 
-export default TodaysDate
+export default TodaysDate;

@@ -24,10 +24,12 @@
     <button onclick="increment()">+ Size</button>
     <button onclick="decrement()">- Size</button>
     <button onclick="changeShape()">Change Shape</button>
+    <button onclick="changeShapeColor()">Change Shape Color</button>
+    <button onclick="changeTitleColor()">Change Title Color</button>
 
     <script>
         let i = 0;
-        const sizeIncrement = 10; // Define a constant for size increment
+        const sizeIncrement = 10;
 
         function changeTitle() {
             i++;
@@ -67,6 +69,18 @@
                 shape.style.borderRadius = "50%";
             }
         }
+
+        //Arrow Functions
+        const changeShapeColor = () => {
+            const shape = document.querySelector("#shape");
+            shape.style.backgroundColor = shape.style.backgroundColor === "red" ? "blue" : "red";
+        }
+
+        const changeTitleColor = () => {
+            const title = document.getElementById("title");
+            title.style.color = title.style.color === "black" ? "green" : "black";
+        }
+
     </script>
 
     </body>

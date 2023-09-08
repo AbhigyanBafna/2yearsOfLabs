@@ -1,16 +1,17 @@
+import React from 'react';
 import './App.css';
 import TodaysDate from './TodaysDate';
+import DateTimeClass from './DateTimeClass';
 
 function App() {
+    const currentDate = new Date().toLocaleDateString();
 
-  const today = new Date();
-
-  return (
-    <div className="App">
-      <h1>Hello World!</h1>
-      <TodaysDate date={today} />
-    </div>
-  );
+    return (
+        <div className="App">
+            <TodaysDate currentDate={currentDate} />
+            <DateTimeClass />
+        </div>
+    );
 }
 
 export default App;

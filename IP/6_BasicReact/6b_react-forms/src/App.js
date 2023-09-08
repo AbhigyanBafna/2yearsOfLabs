@@ -4,6 +4,7 @@ import './App.css';
 function App() {
   const [formData, setFormData] = useState({
     username: '',
+    description: '',
     gender: '',
     interests: [],
     country: ''
@@ -32,7 +33,7 @@ function App() {
   const handleReset = () => {
     setFormData({
       username: '',
-      password: '',
+      description: '',
       gender: '',
       interests: [],
       country: ''
@@ -51,24 +52,36 @@ function App() {
   return (
     <div className="container" onKeyDown={handleKeyDown}>
       <form onSubmit={handleSubmit}>
-        <label>
-          Username:
-          <input
-            type="text"
-            name="username"
-            value={formData.username}
-            onChange={handleChange}
-          />
-        </label>
-        <label>
-          Password:
-          <input
-            type="password"
-            name="password"
-            value={formData.password}
-            onChange={handleChange}
-          />
-        </label>
+        <div className="input-group">
+          <label>
+            Username:
+            <input
+              type="text"
+              name="username"
+              value={formData.username}
+              onChange={handleChange}
+            />
+          </label>
+        </div>
+        <div className="input-group">
+          <label>
+            Password:
+            <input
+              type="password"
+              name="password"
+            />
+          </label>
+        </div>
+        <div className="input-group">
+          <label>
+            Description:
+            <textarea
+              name="description"
+              value={formData.description}
+              onChange={handleChange}
+            />
+          </label>
+        </div>
         <div>
           Gender:
           <label>
